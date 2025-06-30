@@ -1,0 +1,14 @@
+# Python + virtualenv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Output
+reports/
+
+# OS crap
+.DS_Store
+Thumbs.db
