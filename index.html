@@ -31,9 +31,9 @@
     p {
       font-size: 1.2rem;
       margin-bottom: 2rem;
-      max-width: 600px;
+      max-width: 700px;
     }
-    a {
+    a.button {
       background-color: #238636;
       color: white;
       text-decoration: none;
@@ -41,9 +41,32 @@
       border-radius: 8px;
       font-weight: bold;
       transition: background-color 0.3s ease;
+      margin-bottom: 2rem;
     }
-    a:hover {
+    a.button:hover {
       background-color: #2ea043;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .card {
+      background-color: #161b22;
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #30363d;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card h3 {
+      color: #58a6ff;
+      margin-bottom: 0.5rem;
     }
     .footer {
       margin-top: 3rem;
@@ -56,9 +79,35 @@
   <h1>🛡️ 30 Days of Hacking</h1>
   <p>
     A hands-on cybersecurity challenge built by <strong>@Jxnesyy</strong>.<br />
-    30 days, 30 tools, and fully automated TikTok-ready demos. Follow along, fork the code, and hack with purpose.
+    30 days, 30 tools, and fully automated TikTok-ready demos.<br />
+    Follow along, fork the code, and hack with purpose.
   </p>
-  <a href="https://github.com/Jxnesyy/30DaysOfHacking" target="_blank">🚀 View the GitHub Repo</a>
+  <a href="https://github.com/Jxnesyy/30DaysOfHacking" target="_blank" class="button">🚀 View the GitHub Repo</a>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Day 1: OSINT Username Hunt</h3>
+      <p>Automate the hunt with <code>maigret</code> and OBS. A TikTok-ready tool to trace digital footprints.</p>
+    </div>
+    <div class="card">
+      <h3>Day 2: Subdomain Enumeration</h3>
+      <p>Scan websites for hidden subdomains using tools like <code>Sublist3r</code> or <code>amass</code>.</p>
+    </div>
+    <div class="card">
+      <h3>Day 3: Port Scanning</h3>
+      <p>Map open ports using <code>nmap</code> and identify exposed services with live commentary.</p>
+    </div>
+    <div class="card">
+      <h3>Day 4: Banner Grabbing</h3>
+      <p>Use <code>netcat</code> or <code>curl</code> to fingerprint services and extract banners for intel gathering.</p>
+    </div>
+    <div class="card">
+      <h3>Day 5: WHOIS & DNS Recon</h3>
+      <p>Gather registrar, expiry, and DNS details to map digital assets.</p>
+    </div>
+    <!-- Add more cards for upcoming days -->
+  </div>
+
   <div class="footer">
     Made with 💻 in Kali Linux<br />MIT License – 2025
   </div>
