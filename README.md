@@ -2,82 +2,92 @@
 
 A cyber warfare challenge blending OSINT, automation, and TikTok-ready scripts.
 
-> 30 tools. 30 days. Fully documented. Built with Kali Linux, grit, and good intent.
+**30 tools. 30 days. Fully documented.**  
+Built with Kali Linux, grit, and good intent.
 
 ---
 
 ## 🚀 Live GitHub Pages
 
-👉 [View the Interactive Guide](https://jxnesyy.github.io/30DaysOfHacking)
+👉 [**View the Interactive Guide**](https://jxnesyy.github.io/30DaysOfHacking/)  
+👉 [**TikTok: @Jxnesyy**](https://tiktok.com/@jxnesyy)
 
 ---
 
 ## 📅 Daily Challenges
 
-| Day | Title                    | Tool / Script      | Description                                  |
-|-----|--------------------------|--------------------|----------------------------------------------|
-| 1   | Username OSINT           | `hunter.sh`        | Track a username across 300+ sites using Maigret |
-| 2   | Subdomain Enumeration    | `subhunt.sh`       | Discover hidden subs with Sublist3r and Subbrute |
-| 3   | Port Scanning            | `portscope.sh`     | Detect open ports and services with Nmap     |
+| Day | Title                  | Tool / Script     | Description                                               |
+|-----|------------------------|-------------------|-----------------------------------------------------------|
+| 1   | Username OSINT         | `hunter.sh`       | Track a username across 300+ sites using Maigret          |
+| 2   | Subdomain Enumeration  | `subhunt.sh`      | Discover hidden subs with Sublist3r and Subbrute          |
+| 3   | Port Scanning          | `portscope.sh`    | Detect open ports and services with Nmap                  |
 
-Each day includes:
-- ✅ Step-by-step CLI interaction
-- 🎥 TikTok-ready recording
-- 🗂️ Organized reports saved to `/reports/`
-- 📄 HTML-integrated landing page
+---
+
+## 🖼️ Day 1 Demo (OSINT Username Hunt)
+
+![Day 1 demo](https://github.com/Jxnesyy/30DaysOfHacking/assets/your-github-userid/day1-preview.gif)
+
+> Replace the above link with your actual screenshot or gif.
+
+---
+
+## ✅ Each Day Includes:
+- Step-by-step CLI interaction
+- 🎥 TikTok-ready recordings
+- 🗂️ Reports auto-saved to `/reports/`
+- 🌐 HTML-integrated landing page
 
 ---
 
 ## 🧠 Mission
 
-This repo is designed for:
-- 🧑‍💻 Aspiring hackers who want structure
-- 🎬 Content creators automating their process
-- 🛠️ Pentesters building a real-world toolkit
+This repo is for:
+- 🧑‍💻 **Aspiring hackers** who want structured hands-on learning  
+- 🎬 **Content creators** automating their cyber workflows  
+- 🛠️ **Pentesters** building reusable, real-world tooling  
 
 ---
 
 ## ⚙️ Setup Instructions
 
-1. Clone the repo:
+### 1. Clone the repo
+
 ```bash
 git clone https://github.com/Jxnesyy/30DaysOfHacking.git
 cd 30DaysOfHacking
-Make scripts executable:
 
+### 2. Make scripts executable
 bash
-Copy
-Edit
 chmod +x day0*/scripts/*.sh
-Run any day's challenge:
 
-bash
-Copy
-Edit
+### 3. Run any day's challenge
 cd day01/scripts/
 ./hunter.sh
+
 🧩 Dependencies
-Kali Linux (Rolling)
+✅ Kali Linux (Rolling)
 
-Python 3.11+
+✅ Python 3.11+
 
-Tools: maigret, sublist3r, nmap, subbrute, tee
+✅ Tools: maigret, sublist3r, nmap, subbrute, tee
 
-Use the venv or install globally as needed.
+✅ Use virtualenv or install globally
 
 🎬 TikTok Content Strategy
-Each script is built with:
+Each tool is designed for creators:
 
 Minimal prompts
 
-High-contrast terminal visuals
+High-contrast terminal for capture
 
-Auto-saving to make editing easier
+Auto-saving reports
 
-Works flawlessly with OBS + asciinema + svg-term-cli
+Works with OBS + asciinema + svg-term-cli
 
 🪪 License
-MIT – use it, remix it, credit it.
+MIT — use it, remix it, just credit it.
 
 ✨ Author
-Built by Jxnesyy — Cybersecurity Consultant, TikTok Creator, and OSINT Hunter.
+Built by @Jxnesyy
+Cybersecurity Consultant · TikTok Creator · OSINT Hunter
