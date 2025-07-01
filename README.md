@@ -28,7 +28,7 @@ Built with Kali Linux, grit, and good intent.
 
 ![Day 1 demo](https://github.com/Jxnesyy/30DaysOfHacking/assets/your-github-userid/day1-preview.gif)
 
-> Replace the above link with your actual screenshot or gif.
+
 
 ---
 
