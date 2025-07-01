@@ -57,42 +57,21 @@
     }
     .card:hover { transform: scale(1.02); }
     .card h3 { color: #58a6ff; margin-bottom: 0.5rem; }
-    .card button {
+    .card a {
+      display: inline-block;
       margin-top: 1rem;
       padding: 0.5rem 1rem;
       background-color: #238636;
-      border: none;
       color: white;
       font-weight: bold;
       border-radius: 5px;
-      cursor: pointer;
+      text-decoration: none;
     }
-    .card button:hover { background-color: #2ea043; }
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-    .modal-content {
-      background-color: #161b22;
-      margin: 10% auto;
-      padding: 2rem;
-      border: 1px solid #30363d;
-      width: 90%;
-      max-width: 500px;
-      color: #c9d1d9;
-      border-radius: 10px;
-    }
-    .close {
-      color: #c9d1d9;
-      float: right;
-      font-size: 1.5rem;
-      cursor: pointer;
+    .card a:hover { background-color: #2ea043; }
+    .footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #8b949e;
     }
   </style>
 </head>
@@ -109,63 +88,22 @@
     <div class="card">
       <h3>Day 1: OSINT Username Hunt</h3>
       <p>Automate the hunt with <code>maigret</code> and OBS.</p>
-      <button onclick="showModal('maigret')">Learn More</button>
+      <a href="https://github.com/Jxnesyy/30DaysOfHacking/blob/master/day01/README.md" target="_blank">Learn More</a>
     </div>
     <div class="card">
       <h3>Day 2: Subdomain Enumeration</h3>
       <p>Scan websites for hidden subdomains with <code>Sublist3r</code>.</p>
-      <button onclick="showModal('sublist3r')">Learn More</button>
+      <a href="https://github.com/Jxnesyy/30DaysOfHacking/blob/master/day02/README.md" target="_blank">Learn More</a>
     </div>
     <div class="card">
       <h3>Day 3: Port Scanning</h3>
       <p>Map open ports using <code>nmap</code>.</p>
-      <button onclick="showModal('nmap')">Learn More</button>
+      <a href="#" target="_blank">Learn More</a>
     </div>
   </div>
 
   <div class="footer">
     Made with 💻 in Kali Linux<br />MIT License – 2025
   </div>
-
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
-      <div id="modal-body"></div>
-    </div>
-  </div>
-
-  <script>
-    function showModal(tool) {
-      const descriptions = {
-        maigret: `Maigret is a powerful username profiler. It checks 300+ websites to see where a username exists, building a digital footprint.
-
-Usage:
-1. Run ./hunter.sh
-2. Type "Hunt them"
-3. Enter a username to scan
-
-Results: Saved to /reports/` + Date.now() + `.txt`,
-
-        sublist3r: `Sublist3r reveals hidden subdomains tied to a domain.
-
-Usage:
-1. Run ./subhunt.sh
-2. Type "Hunt them"
-3. Enter a domain like nasa.gov
-
-Results: Saved to /day02/reports/DOMAIN_subs.txt`,
-
-        nmap: `Nmap scans networks to find open ports and services.
-
-Usage:
-1. Run: nmap -sV -T4 -Pn TARGET
-2. Customize flags based on stealth/speed needs.
-
-Results: Shown in terminal or output to file with -oN`
-      };
-      document.getElementById('modal-body').innerText = descriptions[tool] || 'Tool description not found.';
-      document.getElementById('modal').style.display = 'block';
-    }
-  </script>
 </body>
 </html>
