@@ -1,147 +1,110 @@
-# 🛡️ 30 Days of Hacking – TikTok Cybersecurity Series
+🛡️ 30 Days of Hacking — Challenge by Jxnesyy
 
-Welcome to **30 Days of Hacking**, an open-source, hands-on ethical hacking challenge designed to showcase real CLI tools with style — all filmed and automated for TikTok.
+Welcome to the ultimate 30-day cybersecurity challenge.  
+Every day, a new tool. Every day, a new skill.  
+Automated, beginner-friendly, TikTok-ready.
 
-This repository features CLI scripts, OSINT automations, and capture-ready setups to help beginners and content creators learn, build, and grow their cybersecurity skills in public.
-
----
-
-## 📆 Days Complete
-
-* ✅ **Day 01**: `hunter.sh` – TikTok OSINT CLI (Maigret + OBS Automation)
-* 🔜 Day 02: \[Redacted until release]
+> 🔥 Built on Kali Linux + CLI tooling  
+> 🎥 Auto-recorded with OBS for content creators  
+> 🧠 Learn OSINT, recon, scanning, and more
 
 ---
 
-## 📌 Table of Contents
+## 📅 Challenge Format
 
-* [Overview](#-overview)
-* [Features](#-features)
-* [Getting Started](#-getting-started)
-* [Usage](#-usage)
-* [TikTok Challenge](#-tiktok-challenge)
-* [Roadmap](#-roadmap)
-* [License](#-license)
+| Day | Tool        | Skill             | Status |
+|-----|-------------|------------------|--------|
+| 1   | Maigret     | OSINT/Username Hunt | ✅ Complete |
+| 2   | Sublist3r   | Subdomain Enumeration | 🚧 In progress |
+| 3   | Nmap        | Port Scanning    | 🔜 Coming |
 
 ---
 
-## 🔍 Overview
+## 📌 Day 1 — OSINT Username Hunt
 
-This repo documents one CLI-based ethical hacking project per day, with a focus on:
+**Tool Used:** [`maigret`](https://github.com/soxoj/maigret)  
+**Script:** `hunter.sh`  
+**Goal:** Automatically find a username across 300+ sites (Reddit, GitHub, TikTok, etc.)
 
-* Open Source Intelligence (OSINT)
-* Bash scripting
-* Automation
-* Video-ready content (OBS integration)
-
----
-
-## 🚀 Features
-
-* Automated username scanning with `maigret`
-* OBS-controlled recording using `obs-cli`
-* Bash script (`hunter.sh`) for hands-free hacking + capture
-* Terminal aesthetic + automated reports saved with timestamps
-
----
-
-## 🛠️ Getting Started
-
-Follow these steps to clone and run Day 01 from your terminal:
+### 🔧 Setup
 
 ```bash
-# 1. Clone the repo
 git clone https://github.com/Jxnesyy/30DaysOfHacking.git
 cd 30DaysOfHacking
-
-# 2. Set up Python + Maigret environment
-pyenv virtualenv 3.11.8 maigret311
 pyenv activate maigret311
-pip install maigret
-
-# 3. Make the main script executable
 chmod +x hunter.sh
-
-# 4. Start the hunt!
+🚀 Run the Hunt
+bash
+Copy
+Edit
 ./hunter.sh
-```
+You’ll be asked to enter a username (like jxnesyy).
+The tool will:
 
-**Note:** OBS must be installed and running with WebSocket plugin (default port 4455). The scene "Day01 TikTok Osint" should exist.
+Start OBS recording
 
----
+Run the Maigret scan
 
-## 🎯 Usage
+Save results to reports/
 
-Once you run `./hunter.sh`, the flow will:
+Stop recording when done ✅
 
-1. Prompt you with: `Type the magic words to begin...`
-2. Start OBS recording
-3. Set your OBS scene
-4. Launch `maigret` on the username defined inside the script (default is `jxnesyy`)
-5. Save the scan results to `reports/USERNAME_TIMESTAMP.txt`
-6. Stop OBS recording
+📄 Example output: reports/jxnesyy_20250701_1400.txt
 
-### Example Output
+🎬 TikTok Recording (Optional)
+If you have OBS CLI set up:
 
-```bash
-✅ Hunt complete. Report saved to: reports/jxnesyy_20250701_164059.txt
-```
+Automatically records the terminal during scan
 
-### Preview Screenshot
+Switches scenes and saves footage for posting
 
-*(Add a preview screenshot or video link here once your TikTok is published)*
+🤖 About hunter.sh
+This is your one-command TikTok-ready automation.
 
----
+✅ Launches Maigret scan
 
-## 🎥 TikTok Challenge
+🎥 Starts + stops OBS recording
 
-Join the public challenge and post your scans with style:
+📂 Saves report in reports/
 
-1. Clone this repo:
-   `git clone https://github.com/Jxnesyy/30DaysOfHacking.git`
-2. Run the tool:
-   `cd 30DaysOfHacking && ./hunter.sh`
-3. Post your results on TikTok with the hashtag:
-   `#30DaysOfHacking`
+🧠 Great for educational or audit-style content
 
-Tag [@Jxnesyy](https://tiktok.com/@jxnesyy) for reposts 🔥
+Run nano hunter.sh to customize the username, OBS scene, or file path.
 
----
+💡 Beginner Friendly?
+Yes. If you can run:
 
-## 🧠 Roadmap
+bash
+Copy
+Edit
+./hunter.sh
+…then you can do this challenge.
 
-| Day | Tool        | Description                           |
-| --- | ----------- | ------------------------------------- |
-| 01  | `hunter.sh` | OSINT via `maigret` + OBS auto-record |
-| 02  | TBA         | Coming soon                           |
-| ... | ...         | ...                                   |
-| 30  | `???`       | Final boss level 😈                   |
+Even non-technical people can follow the results.
 
----
+🧰 Requirements
+Python + Pyenv
 
-## 📂 Repo Structure
+maigret
 
-```bash
-30DaysOfHacking/
-├── hunter.sh              # Main automation script
-├── .python-version        # Pyenv version file
-├── README.md              # This file
-├── CONTENT_CALENDAR.md   # Planning notes
-├── reports/               # Auto-generated Maigret results
-├── scripts/               # (Optional future tools)
-└── LICENSE
-```
+OBS Studio + obs-cli (optional, for auto-recording)
 
----
+🌐 Web Version
+Check out the project’s landing page:
+https://jxnesyy.github.io/30DaysOfHacking
 
-## 📜 License
+🧠 Why this matters
+Cybersecurity isn’t just for hackers in hoodies.
+This challenge teaches real-world tools to:
 
-MIT © [Jxnesyy](https://github.com/Jxnesyy)
+Audit your own online presence
 
----
+Practice OSINT and recon techniques
 
-### 💡 Suggestions?
+Build professional habits
 
-Open a GitHub issue or submit a pull request — contributions are welcome!
+👤 Author
+Built by @Jxnesyy
 
-> “Hack with purpose. Post with power.” — @Jxnesyy
+📜 License
+MIT – free to use, modify, remix.
