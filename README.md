@@ -3,18 +3,21 @@ A cyber warfare challenge blending OSINT, automation, and TikTok-ready scripts.
 
 30 tools. 30 days. Fully documented. Built with Kali Linux, grit, and good intent.
 
-🚀 **Live GitHub Pages:** [View Interactive Guide](https://jxnesyy.github.io/30DaysOfHacking)
+🚀 **Live GitHub Pages:** [View Interactive Guide](https://jxnesyy.github.io/30DaysOfHacking/)
 
 ---
 
 ## 📅 Daily Challenges
 
-| Day | Title                 | Tool / Script     | Description                                              |
-|-----|-----------------------|-------------------|----------------------------------------------------------|
-| 1   | Username OSINT        | `hunter.sh`       | Track a username across 300+ sites using Maigret         |
-| 2   | Subdomain Enumeration | `subhunt.sh`      | Discover hidden subdomains with Sublist3r + Subbrute     |
-| 3   | Port Scanning         | `portscope.sh`    | Detect open ports and services using Nmap                |
-| 4   | Website Spidering     | `webspider.sh`    | Mirror websites with wget spider mode                    |
+| Day | Tool              | Script           | Description |
+|-----|-------------------|------------------|-------------|
+| 01  | Maigret           | `hunter.sh`      | OSINT reconnaissance tool scanning 300+ websites for usernames. |
+| 02  | Sublist3r + Subbrute | `subhunt.sh` | Subdomain enumeration combining passive and brute-force techniques. |
+| 03  | Nmap              | `portscope.sh`   | Port scanning for services and identifying attack surfaces. |
+| 04  | Wget              | `webspider.sh`   | Website spidering and offline mirroring using recursive Wget. |
+| 05  | Dirb              | `filehunt.sh`    | Directory and file brute-forcing to discover hidden entry points. |
+| 06  | WhatWeb           | `techpeek.sh`    | Web technology fingerprinting for headers, CMS, and frameworks. |
+
 
 Each day includes:
 - ✅ Step-by-step CLI interaction
