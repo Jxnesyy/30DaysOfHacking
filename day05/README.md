@@ -19,9 +19,6 @@ cd day05/scripts
 You’ll be prompted for a target URL (use https://example.com/ format).
 The results will be saved in the ../reports/ folder.
 
-🖼 Sample Report
-Here's a sample of what the output looks like after a successful scan:
-
 
 🧠 Pro Tip
 Use realistic wordlists like:
