@@ -6,93 +6,134 @@
   <title>30 Days of Hacking – Jxnesyy</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0e0e0e;
+      background-color: #0e0e0e;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
       color: #f0f0f0;
+      margin: 0;
       padding: 2rem;
     }
+
     h1 {
       text-align: center;
-      color: #00ffae;
+      color: #00ffc8;
+      font-size: 2.4rem;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
+
+    p {
+      text-align: center;
+      color: #ccc;
+      margin-top: -0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
       margin-top: 2rem;
     }
-    th, td {
-      border: 1px solid #444;
-      padding: 0.75rem;
-      text-align: left;
+
+    .card {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      padding: 1.5rem;
+      border-radius: 12px;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0 0 5px #00ffc8;
     }
-    th {
-      background-color: #1f1f1f;
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 12px #00ffc8;
+      cursor: pointer;
     }
-    tr:nth-child(even) {
-      background-color: #181818;
+
+    .day {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #00ffc8;
+      margin-bottom: 0.5rem;
     }
-    a {
-      color: #00ffd5;
-      text-decoration: none;
+
+    .title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 0.3rem;
     }
+
+    .script {
+      font-size: 0.95rem;
+      font-family: monospace;
+      color: #ccc;
+      margin-bottom: 0.4rem;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
     .footer {
       margin-top: 4rem;
-      font-size: 0.9rem;
       text-align: center;
       color: #888;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #00ffc8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
   <h1>🛡️ 30 Days of Hacking – by Jxnesyy</h1>
-  <p style="text-align: center;">Each day, a new tool. A new skill. A documented challenge blending automation, hacking, and content creation.</p>
+  <p>One tool. One script. One video. Every day.</p>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Day</th>
-        <th>Title</th>
-        <th>Script</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Username OSINT</td>
-        <td><code>hunter.sh</code></td>
-        <td>Track usernames across 300+ platforms using Maigret</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Subdomain Enumeration</td>
-        <td><code>subhunt.sh</code></td>
-        <td>Discover subdomains with Sublist3r and Subbrute</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Port Scanning</td>
-        <td><code>portscope.sh</code></td>
-        <td>Detect open ports and services with Nmap</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Website Spidering</td>
-        <td><code>webspider.sh</code></td>
-        <td>Mirror entire websites using wget spider mode</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>File & Directory Discovery</td>
-        <td><code>filehunt.sh</code></td>
-        <td>Scan for hidden files and dirs with dirb</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="grid">
+    <div class="card">
+      <div class="day">Day 01</div>
+      <div class="title">Username OSINT</div>
+      <div class="script">hunter.sh</div>
+      <div class="description">Track a username across 300+ platforms using Maigret</div>
+    </div>
+
+    <div class="card">
+      <div class="day">Day 02</div>
+      <div class="title">Subdomain Enumeration</div>
+      <div class="script">subhunt.sh</div>
+      <div class="description">Discover subdomains with Sublist3r and Subbrute</div>
+    </div>
+
+    <div class="card">
+      <div class="day">Day 03</div>
+      <div class="title">Port Scanning</div>
+      <div class="script">portscope.sh</div>
+      <div class="description">Detect open ports and services with Nmap</div>
+    </div>
+
+    <div class="card">
+      <div class="day">Day 04</div>
+      <div class="title">Website Spidering</div>
+      <div class="script">webspider.sh</div>
+      <div class="description">Mirror entire websites using wget spider mode</div>
+    </div>
+
+    <div class="card">
+      <div class="day">Day 05</div>
+      <div class="title">File & Directory Discovery</div>
+      <div class="script">filehunt.sh</div>
+      <div class="description">Brute force directories using dirb</div>
+    </div>
+  </div>
 
   <div class="footer">
-    Made with ❤️ in Kali Linux – Follow <a href="https://github.com/Jxnesyy">Jxnesyy</a> | <a href="https://jxnesyy.github.io/30DaysOfHacking">Live Guide</a>
+    Crafted by <a href="https://github.com/Jxnesyy" target="_blank">Jxnesyy</a> | <a href="https://jxnesyy.github.io/30DaysOfHacking" target="_blank">Live GitHub Page</a>
   </div>
 
 </body>
