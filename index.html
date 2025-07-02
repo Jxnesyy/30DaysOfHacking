@@ -121,6 +121,11 @@
       <p>Identify open services with <code>Nmap</code> and report results.</p>
       <button onclick="showModal('nmap')">Learn More</button>
     </div>
+    <div class="card">
+      <h3>Day 4: Website Spidering</h3>
+      <p>Mirror a target site with <code>wget</code> spider mode.</p>
+      <button onclick="showModal('webspider')">Learn More</button>
+    </div>
   </div>
 
   <div class="footer">
@@ -162,7 +167,15 @@ Usage:
 2. Type "Hunt them"
 3. Enter an IP or subnet like 10.0.2.15 or 10.0.2.0/24
 
-Results: Saved to /day03/reports/ with a timestamped filename.`
+Results: Saved to /day03/reports/ with a timestamped filename.`,
+
+        webspider: `Wget spider mode mirrors the structure of a site for analysis.
+
+Usage:
+1. Run ./webspider.sh
+2. Type the domain you want to crawl (e.g., example.com)
+
+Results: Saved to /day04/reports/ in a timestamped folder.`
       };
       document.getElementById('modal-body').innerText = descriptions[tool] || 'Tool description not found.';
       document.getElementById('modal').style.display = 'block';
