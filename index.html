@@ -39,6 +39,8 @@
       border-radius: 12px;
       transition: all 0.2s ease-in-out;
       box-shadow: 0 0 5px #00ffc8;
+      text-decoration: none;
+      color: inherit;
     }
 
     .card:hover {
@@ -73,6 +75,11 @@
       color: #aaa;
     }
 
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
     .footer {
       margin-top: 4rem;
       text-align: center;
@@ -96,40 +103,45 @@
   <p>One tool. One script. One video. Every day.</p>
 
   <div class="grid">
-    <div class="card">
+    <a class="card" href="./day01/" title="Scan 300+ websites for a username using Maigret">
+      <div class="icon">🔍</div>
       <div class="day">Day 01</div>
       <div class="title">Username OSINT</div>
       <div class="script">hunter.sh</div>
-      <div class="description">Track a username across 300+ platforms using Maigret</div>
-    </div>
+      <div class="description">Maigret scans 300+ websites for a username to gather OSINT profiles and identities.</div>
+    </a>
 
-    <div class="card">
+    <a class="card" href="./day02/" title="Find subdomains using Sublist3r and brute-force with Subbrute">
+      <div class="icon">🌐</div>
       <div class="day">Day 02</div>
       <div class="title">Subdomain Enumeration</div>
       <div class="script">subhunt.sh</div>
-      <div class="description">Discover subdomains with Sublist3r and Subbrute</div>
-    </div>
+      <div class="description">Sublist3r + Subbrute discover exposed and hidden subdomains of a target domain.</div>
+    </a>
 
-    <div class="card">
+    <a class="card" href="./day03/" title="Scan open ports and detect services with Nmap">
+      <div class="icon">📡</div>
       <div class="day">Day 03</div>
       <div class="title">Port Scanning</div>
       <div class="script">portscope.sh</div>
-      <div class="description">Detect open ports and services with Nmap</div>
-    </div>
+      <div class="description">Nmap reveals live ports and services, helping identify surface vulnerabilities.</div>
+    </a>
 
-    <div class="card">
+    <a class="card" href="./day04/" title="Download an entire website using wget's spidering functionality">
+      <div class="icon">🕷️</div>
       <div class="day">Day 04</div>
       <div class="title">Website Spidering</div>
       <div class="script">webspider.sh</div>
-      <div class="description">Mirror entire websites using wget spider mode</div>
-    </div>
+      <div class="description">wget's spider mode recursively downloads a website for offline recon & archiving.</div>
+    </a>
 
-    <div class="card">
+    <a class="card" href="./day05/" title="Brute-force hidden directories and files using dirb">
+      <div class="icon">🗂️</div>
       <div class="day">Day 05</div>
       <div class="title">File & Directory Discovery</div>
       <div class="script">filehunt.sh</div>
-      <div class="description">Brute force directories using dirb</div>
-    </div>
+      <div class="description">dirb brute-forces directories/files to uncover hidden admin panels and endpoints.</div>
+    </a>
   </div>
 
   <div class="footer">
