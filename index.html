@@ -41,6 +41,7 @@
       box-shadow: 0 0 5px #00ffc8;
       text-decoration: none;
       color: inherit;
+      position: relative;
     }
 
     .card:hover {
@@ -95,6 +96,21 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .card:hover::after {
+      content: attr(data-preview);
+      position: absolute;
+      bottom: -3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #000;
+      color: #00ffc8;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      white-space: nowrap;
+      z-index: 10;
+    }
   </style>
 </head>
 <body>
@@ -103,7 +119,8 @@
   <p>One tool. One script. One video. Every day.</p>
 
   <div class="grid">
-    <a class="card" href="./day01/" title="Scan 300+ websites for a username using Maigret">
+
+    <a class="card" href="./day01/" data-preview="Maigret username OSINT tool in action">
       <div class="icon">🔍</div>
       <div class="day">Day 01</div>
       <div class="title">Username OSINT</div>
@@ -111,7 +128,7 @@
       <div class="description">Maigret scans 300+ websites for a username to gather OSINT profiles and identities.</div>
     </a>
 
-    <a class="card" href="./day02/" title="Find subdomains using Sublist3r and brute-force with Subbrute">
+    <a class="card" href="./day02/" data-preview="Sublist3r & Subbrute in terminal enumeration">
       <div class="icon">🌐</div>
       <div class="day">Day 02</div>
       <div class="title">Subdomain Enumeration</div>
@@ -119,7 +136,7 @@
       <div class="description">Sublist3r + Subbrute discover exposed and hidden subdomains of a target domain.</div>
     </a>
 
-    <a class="card" href="./day03/" title="Scan open ports and detect services with Nmap">
+    <a class="card" href="./day03/" data-preview="Nmap scanning live ports and saving output">
       <div class="icon">📡</div>
       <div class="day">Day 03</div>
       <div class="title">Port Scanning</div>
@@ -127,7 +144,7 @@
       <div class="description">Nmap reveals live ports and services, helping identify surface vulnerabilities.</div>
     </a>
 
-    <a class="card" href="./day04/" title="Download an entire website using wget's spidering functionality">
+    <a class="card" href="./day04/" data-preview="wget spider crawling NASA.gov for offline clone">
       <div class="icon">🕷️</div>
       <div class="day">Day 04</div>
       <div class="title">Website Spidering</div>
@@ -135,13 +152,22 @@
       <div class="description">wget's spider mode recursively downloads a website for offline recon & archiving.</div>
     </a>
 
-    <a class="card" href="./day05/" title="Brute-force hidden directories and files using dirb">
+    <a class="card" href="./day05/" data-preview="dirb brute-forcing hidden dirs on a test site">
       <div class="icon">🗂️</div>
       <div class="day">Day 05</div>
       <div class="title">File & Directory Discovery</div>
       <div class="script">filehunt.sh</div>
       <div class="description">dirb brute-forces directories/files to uncover hidden admin panels and endpoints.</div>
     </a>
+
+    <a class="card" href="./day06/" data-preview="curl revealing HTTP security headers in terminal">
+      <div class="icon">📬</div>
+      <div class="day">Day 06</div>
+      <div class="title">HTTP Headers</div>
+      <div class="script">headerpeek.sh</div>
+      <div class="description">Uses curl to extract and inspect HTTP headers for signs of security misconfigurations.</div>
+    </a>
+
   </div>
 
   <div class="footer">
