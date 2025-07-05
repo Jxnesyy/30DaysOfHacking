@@ -12,12 +12,12 @@ A cyber warfare challenge blending OSINT, automation, and TikTok-ready scripts.
 | Day | Tool              | Script           | Description |
 |-----|-------------------|------------------|-------------|
 | 01  | Maigret           | `hunter.sh`      | OSINT reconnaissance tool scanning 300+ websites for usernames. |
-| 02  | Sublist3r + Subbrute | `subhunt.sh` | Subdomain enumeration combining passive and brute-force techniques. |
-| 03  | Nmap              | `portscope.sh`   | Port scanning for services and identifying attack surfaces. |
-| 04  | Wget              | `webspider.sh`   | Website spidering and offline mirroring using recursive Wget. |
-| 05  | Dirb              | `filehunt.sh`    | Directory and file brute-forcing to discover hidden entry points. |
-| 06  | WhatWeb           | `techpeek.sh`    | Web technology fingerprinting for headers, CMS, and frameworks. |
-
+| 02  | Sublist3r         | `subhunt.sh`     | Subdomain enumeration combining passive and brute-force techniques.|
+| 03  | Nmap              | `portscope.sh`   | Port scanning for services and identifying attack surfaces.|
+| 04  | Wget              | `webspider.sh`   | Website spidering and offline mirroring using recursive Wget.|
+| 05  | Dirb              | `filehunt.sh`    | Directory and file brute-forcing to discover hidden entry points.|
+| 06  | WhatWeb           | `techpeek.sh`    | Web technology fingerprinting for headers, CMS, and frameworks.|
+| 07  | Nikto             | `nikto.sh`       | Web Server Vulnerability Scanner.|
 
 Each day includes:
 - ✅ Step-by-step CLI interaction
