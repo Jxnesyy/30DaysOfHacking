@@ -3,176 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>30 Days of Hacking – Jxnesyy</title>
+  <title>30 Days of Hacking by Jxnesyy</title>
   <style>
     body {
-      background-color: #0e0e0e;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      color: #f0f0f0;
-      margin: 0;
-      padding: 2rem;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #0d0d0d;
+      color: #00ff99;
+      padding: 40px;
     }
-
     h1 {
-      text-align: center;
-      color: #00ffc8;
-      font-size: 2.4rem;
+      color: #00ffff;
+      border-bottom: 2px solid #00ff99;
+      padding-bottom: 10px;
     }
-
-    p {
-      text-align: center;
-      color: #ccc;
-      margin-top: -0.5rem;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
     }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
+    th, td {
+      border: 1px solid #00ff99;
+      padding: 10px;
+      text-align: left;
     }
-
-    .card {
-      background-color: #1a1a1a;
-      border: 1px solid #333;
-      padding: 1.5rem;
-      border-radius: 12px;
-      transition: all 0.2s ease-in-out;
-      box-shadow: 0 0 5px #00ffc8;
-      text-decoration: none;
-      color: inherit;
-      position: relative;
+    th {
+      background-color: #001f1f;
     }
-
-    .card:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 12px #00ffc8;
-      cursor: pointer;
-    }
-
-    .day {
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: #00ffc8;
-      margin-bottom: 0.5rem;
-    }
-
-    .title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: #fff;
-      margin-bottom: 0.3rem;
-    }
-
-    .script {
-      font-size: 0.95rem;
-      font-family: monospace;
-      color: #ccc;
-      margin-bottom: 0.4rem;
-    }
-
-    .description {
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-
-    .icon {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .footer {
-      margin-top: 4rem;
-      text-align: center;
-      color: #888;
-      font-size: 0.9rem;
-    }
-
     a {
-      color: #00ffc8;
+      color: #00ffff;
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
-
-    .card:hover::after {
-      content: attr(data-preview);
-      position: absolute;
-      bottom: -3rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #000;
-      color: #00ffc8;
-      padding: 0.4rem 0.8rem;
-      border-radius: 6px;
-      font-size: 0.75rem;
-      white-space: nowrap;
-      z-index: 10;
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <h1>🛡️ 30 Days of Hacking – by Jxnesyy</h1>
-  <p>One tool. One script. One video. Every day.</p>
+  <h1>💻 30 Days of Hacking Challenge - Jxnesyy</h1>
+  <p>Welcome to my journey to master ethical hacking in 30 days. Each day I explore and document a new tool or technique. 🚀</p>
 
-  <div class="grid">
+  <table>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Tool / Topic</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Day 1</td>
+        <td>WHOIS + nslookup Recon</td>
+        <td><a href="day01_whois/README.md" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Day 2</td>
+        <td>Nmap Basics</td>
+        <td><a href="day02_nmap/README.md" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Day 3</td>
+        <td>Traceroute & Dig</td>
+        <td><a href="day03_traceroute/README.md" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Day 4</td>
+        <td>theHarvester</td>
+        <td><a href="day04_theharvester/README.md" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Day 5</td>
+        <td>Recon-ng</td>
+        <td><a href="day05_reconng/README.md" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Day 6</td>
+        <td>Sublist3r - Subdomain Enumeration</td>
+        <td><a href="day06_sublist3r/README.md" target="_blank">View</a></td>
+      </tr>
+      <tr>
+        <td>Day 7</td>
+        <td>Nikto - Web Server Vulnerability Scanner</td>
+        <td><a href="day07_nikto/README.md" target="_blank">View</a></td>
+      </tr>
+      <!-- Upcoming days can be added below -->
+    </tbody>
+  </table>
 
-    <a class="card" href="./day01/" data-preview="Maigret username OSINT tool in action">
-      <div class="icon">🔍</div>
-      <div class="day">Day 01</div>
-      <div class="title">Username OSINT</div>
-      <div class="script">hunter.sh</div>
-      <div class="description">Maigret scans 300+ websites for a username to gather OSINT profiles and identities.</div>
-    </a>
-
-    <a class="card" href="./day02/" data-preview="Sublist3r & Subbrute in terminal enumeration">
-      <div class="icon">🌐</div>
-      <div class="day">Day 02</div>
-      <div class="title">Subdomain Enumeration</div>
-      <div class="script">subhunt.sh</div>
-      <div class="description">Sublist3r + Subbrute discover exposed and hidden subdomains of a target domain.</div>
-    </a>
-
-    <a class="card" href="./day03/" data-preview="Nmap scanning live ports and saving output">
-      <div class="icon">📡</div>
-      <div class="day">Day 03</div>
-      <div class="title">Port Scanning</div>
-      <div class="script">portscope.sh</div>
-      <div class="description">Nmap reveals live ports and services, helping identify surface vulnerabilities.</div>
-    </a>
-
-    <a class="card" href="./day04/" data-preview="wget spider crawling NASA.gov for offline clone">
-      <div class="icon">🕷️</div>
-      <div class="day">Day 04</div>
-      <div class="title">Website Spidering</div>
-      <div class="script">webspider.sh</div>
-      <div class="description">wget's spider mode recursively downloads a website for offline recon & archiving.</div>
-    </a>
-
-    <a class="card" href="./day05/" data-preview="dirb brute-forcing hidden dirs on a test site">
-      <div class="icon">🗂️</div>
-      <div class="day">Day 05</div>
-      <div class="title">File & Directory Discovery</div>
-      <div class="script">filehunt.sh</div>
-      <div class="description">dirb brute-forces directories/files to uncover hidden admin panels and endpoints.</div>
-    </a>
-
-    <a class="card" href="./day06/" data-preview="curl revealing HTTP security headers in terminal">
-      <div class="icon">📬</div>
-      <div class="day">Day 06</div>
-      <div class="title">HTTP Headers</div>
-      <div class="script">headerpeek.sh</div>
-      <div class="description">Uses curl to extract and inspect HTTP headers for signs of security misconfigurations.</div>
-    </a>
-
-  </div>
-
-  <div class="footer">
-    Crafted by <a href="https://github.com/Jxnesyy" target="_blank">Jxnesyy</a> | <a href="https://jxnesyy.github.io/30DaysOfHacking" target="_blank">Live GitHub Page</a>
-  </div>
+  <footer>
+    <p>© 2025 Jxnesyy | Follow the journey on <a href="https://github.com/Jxnesyy/30DaysOfHacking" target="_blank">GitHub</a></p>
+  </footer>
 
 </body>
 </html>
